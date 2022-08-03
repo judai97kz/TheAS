@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AUinfo">
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#504D4D">
+
+        <ImageView
+            android:id="@+id/imga"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="5dp"></ImageView>
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Tên : "
+            android:id="@+id/txna"
+            android:layout_margin="5dp"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@id/imga"></TextView>
+        <TextView
+            android:id="@+id/namea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/txna"
+            android:text="Name Aurorians"
+            android:textColor="@color/white"></TextView>
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Vai trò : "
+            android:id="@+id/atxvt"
+            android:layout_margin="5dp"
+            android:textColor="@color/white"
+            android:layout_below="@id/txna"
+            android:layout_toRightOf="@id/imga"></TextView>
+        <TextView
+            android:id="@+id/Classa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/namea"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/atxvt"
+            android:text="Class Aurorians"
+            android:textColor="@color/white"></TextView>
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Hệ : "
+            android:id="@+id/atxh"
+            android:layout_margin="5dp"
+            android:textColor="@color/white"
+            android:layout_below="@id/atxvt"
+            android:layout_toRightOf="@id/imga"></TextView>
+
+        <TextView
+            android:id="@+id/Elea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/atxvt"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/atxh"
+            android:text="Ele Aurorians"
+            android:textColor="@color/white"></TextView>
+
+        <TextView
+            android:id="@+id/Elea1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/atxvt"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/Elea"
+            android:text="Ele Aurorians"
+            android:textColor="@color/white"></TextView>
+
+        <TextView
+            android:id="@+id/tif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Info"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@id/imga"
+            android:layout_below="@+id/Elea"></TextView>
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/astar"
+            android:text="0*"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@id/txsa"
+            android:layout_below="@id/imga"
+            ></TextView>
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:text="Bậc:"
+            android:id="@+id/txsa"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/white"
+            android:layout_below="@id/imga"
+            ></TextView>
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lskill"
+        android:layout_below="@+id/rl2"
+        android:background="#7E6262"></ListView>
+
+</RelativeLayout>

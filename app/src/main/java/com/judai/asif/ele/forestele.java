@@ -1,0 +1,42 @@
+package com.judai.asif.ele;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ListView;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+
+import com.judai.asif.AUinfo;
+import com.judai.asif.AUs;
+import com.judai.asif.AuAdapter;
+import com.judai.asif.R;
+import com.judai.asif.aurorians;
+
+public class forestele extends Fragment {
+    ListView green;
+    AuAdapter adapter;
+    @Nullable
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fg_forest,container,false);
+        green = view.findViewById(R.id.greenls);
+        adapter = new AuAdapter(getActivity(), aurorians.greenls,R.layout.au_row);
+        green.setAdapter(adapter);
+        green.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                AUs s = aurorians.greenls.get(i);
+                Intent intent = new Intent(getActivity(), AUinfo.class);
+                intent.putExtra("user",s);
+                startActivity(intent);
+            }
+        });
+        return view;
+    }
+}
