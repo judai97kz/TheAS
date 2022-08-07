@@ -24,5 +24,6 @@ public class MainActivity extends AppCompatActivity {
         });
         Toast.makeText(this,"Đã thay đổi",Toast.LENGTH_LONG).show();
         Toast.makeText(this,"Đã thay đổi 2",Toast.LENGTH_LONG).show();
+        Toast.makeText(this,"Đã thay đổi 3",Toast.LENGTH_LONG).show();
     }
 }
